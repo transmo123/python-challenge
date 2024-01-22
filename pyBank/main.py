@@ -54,7 +54,7 @@ print(f"Greatest Increase in Profits: {greatest_increase_date} (${greatest_incre
 print(f"Greatest Decrease in Profits: {greatest_decrease_date} (${greatest_decrease})")
 
 # Export results to a text file
-output_file_path = "financial_analysis.txt"
+output_file_path = "analysis/financial_analysis.txt"
 with open(output_file_path, "w") as output_file:
     output_file.write("Financial Analysis\n")
     output_file.write("----------------------------\n")
