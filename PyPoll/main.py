@@ -49,4 +49,16 @@ print("-------------------------")
 print(f"Winner: {winner['name']} with {winner['votes']} votes")
 print("-------------------------")
 
+# Export results to a text file
+output_file_path = "analysis/election_results.txt"
+with open(output_file_path, "w") as output_file:
+    output_file.write("Election Results\n")
+    output_file.write("----------------------------\n")
+    output_file.write(f"Total Votes: {total_votes}\n")
+    output_file.write("----------------------------\n")
+    output_file.write(f"{candidate}: {percentage:.3f}% ({votes})\n")
+    output_file.write("----------------------------\n")
+    output_file.write(f"Winner: {winner['name']} with {winner['votes']} votes\n")
+    output_file.write("-------------------------\n")
 
+print("Results exported to election_results.txt")
